@@ -1,14 +1,21 @@
+// Retrieves last calculation
 let calculation = JSON.parse(localStorage.getItem('calculation'))|| "";
+
+// Clears the display
 function removeAll(){
     calculation = "";
     console.log('Calculation is cleared.');
     document.getElementById('display-box').textContent = calculation;
 }
+
+// Clears the last character
 function remove(){
     calculation = calculation.slice(0, -1);
     console.log('Last input is removed.');
     document.getElementById('display-box').textContent = calculation;
 }
+
+// Appending input to display
 function calc(x){
     if(x == '<') calculation += "(";
     else if( x == '>') calculation += ")";
@@ -16,6 +23,8 @@ function calc(x){
     console.log(`Calculation is: ${calculation}`);
     document.getElementById('display-box').textContent = calculation;
 }
+
+// Calculation is done
 function result(){
     let result = eval(calculation);
     console.log(`The result is: ${result}`);
@@ -23,6 +32,8 @@ function result(){
     calculation = String(result);
     document.getElementById('display-box').textContent = result;
 }
+
+// Event listener to handle keydown event
 document.addEventListener('keydown',function(event){
     switch(event.key){
         case "Backspace":

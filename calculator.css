@@ -1,3 +1,4 @@
+/* Body is displayed as flex */
 body{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -6,39 +7,41 @@ body{
     justify-content: center;
     padding: 10px;
 }
-            div{
-                display: block; 
-                /* unicode-bidi: isolate; */
-                background-color: black;
-                border-radius: 15px;
-                padding: 20px;
-                text-align: center;
-                min-width: 210px;
-            }
-            #display-box{
-                font-size: 32px;
-                text-align: center;
-                background-color: rgb(156, 237, 233);
-                color: black;
-                min-width: 10px;
-                min-height: 41px;
-            }
-            .button{
-                font-weight: bold;
-                text-align: center;
-                margin: 2px;
-                padding: 10px;
-                width: 40px;
-                height: 40px;
-                border: none;
-                color: white;
-                background-color: rgb(82, 78, 78);
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-            }
-            .op, .result{
-                background-color: rgb(233, 156, 40);
-            }
-            .del{
-                background-color: rgb(238, 56, 56);
-            }
+/* The calculator */
+div{
+    display: block; 
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    min-width: 210px;
+}
+/* Display box */
+#display-box{
+    font-size: 32px;
+    text-align: center;
+    background-color: rgb(156, 237, 233);
+    color: black;
+    min-width: 10px;
+    min-height: 41px;
+}
+/* Style of buttons */
+.button{
+    font-weight: bold;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(82, 78, 78);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.op, .result{
+    background-color: rgb(233, 156, 40);
+}
+.del{
+    background-color: rgb(238, 56, 56);
+}
